@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
    <!--
       New Perspectives on HTML5 and CSS3, 7th Edition
@@ -18,6 +18,10 @@
    <title>The Sudoku Puzzle</title>
    <link href="CSS/jpf_reset.css" rel="stylesheet" />
    <link href="CSS/jpf_styles.css" rel="stylesheet" />
+
+   <!-- Step 2. Go to the jpf_sudoku.html file in your editor.
+        Add a link to the jpf_sudoku.css style sheet file to the document head. -->
+   <link href="CSS/jpf_sudoku.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,6 +40,265 @@
    </header>
    
    <section>
+
+      <!-- Step 3. Within the section element, insert a table element that will be used
+           to display the Sudoku puzzle. Give the table element the class name spuzzle. -->
+      <table class="spuzzle">
+
+         <!-- Step 4. Add a caption to the puzzle table containing the text Sudoku. -->
+         <caption>Sudoku</caption>
+
+         <!-- Step 5. Create a table header row group containing a single row.
+              The row should display 10 heading cells. The first heading cell should be blank
+              and the remaining nine cells should display the digits from 1 to 9. -->
+         <thead>
+            <tr>
+               <th scope="col"></th>
+               <th scope="col">1</th>
+               <th scope="col">2</th>
+               <th scope="col">3</th>
+               <th scope="col">4</th>
+               <th scope="col">5</th>
+               <th scope="col">6</th>
+               <th scope="col">7</th>
+               <th scope="col">8</th>
+               <th scope="col">9</th>
+            </tr>
+         </thead>
+
+         <!-- Step 6. Create the table body row group containing nine table rows
+              with the first cell in each row containing a heading cell displaying
+              the letters A through I. -->
+
+         <!-- Step 8. In the first row of the table body row, put the three table data cells you
+              entered in the last step in the greenBox, goldBox, and greenBox classes, respectively.
+              In the fourth row, the three data cells belong to the goldBox, greenBox, and goldBox classes.
+              In the seventh row, the three data cells belong to the greenBox, goldBox, and greenBox classes. -->
+
+         <!-- Step 9. Go to each of the nine table data cells you created in the last two steps.
+              Within each data cell, insert a nested table belonging to the subTable class.
+              Within each of these nested tables, insert three rows and three columns of data cells.
+              Enter the digits from Figure 6-49 in the appropriate table cells.
+              Where there is no digit, leave the data cell empty. -->
+         <tbody>
+            <tr>
+               <th>A</th>
+               <td class="greenBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td>4</td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>5</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td class="goldBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td>5</td>
+                           <td></td>
+                           <td>3</td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td class="greenBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td>7</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>3</td>
+                           <td>1</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>2</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <th>B</th>
+            </tr>
+            <tr>
+               <th>C</th>
+            </tr>
+            <tr>
+               <th>D</th>
+               <td class="goldBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>6</td>
+                           <td></td>
+                           <td>9</td>
+                        </tr>
+                        <tr>
+                           <td>4</td>
+                           <td>7</td>
+                           <td>2</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td class="greenBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td>2</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td>9</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td class="goldBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td>9</td>
+                           <td>3</td>
+                           <td>7</td>
+                        </tr>
+                        <tr>
+                           <td>4</td>
+                           <td></td>
+                           <td>8</td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <th>E</th>
+            </tr>
+            <tr>
+               <th>F</th>
+            </tr>
+            <tr>
+               <th>G</th>
+               <td class="greenBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td>4</td>
+                           <td>5</td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td>6</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td class="goldBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>8</td>
+                           <td></td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+               <td class="greenBox" colspan="3" rowspan="3">
+                  <table class="subTable">
+                     <tbody>
+                        <tr>
+                           <td></td>
+                           <td>5</td>
+                           <td>2</td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>7</td>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <th>H</th>
+            </tr>
+            <tr>
+               <th>I</th>
+            </tr>
+         </tbody>
+      </table>
    </section>
 
    <article>
